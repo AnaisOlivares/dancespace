@@ -1,0 +1,69 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #2b2b2b;
+  color: #db791f;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+  /* color: white; */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+hr {
+  width: 75%;
+  /* text-align: center; */
+}
+
+.square {
+  width: 17px;
+  height: 17px;
+  border: 1px solid white;
+  position: relative;
+  float: left;
+  /* top: 17px; */
+  left: 9%;
+}
+
+.hidden {
+  display: none;
+}
+
+.square-2 {
+  width: 17px;
+  height: 17px;
+  border: 1px solid white;
+  position: relative;
+  float: right;
+  bottom: 28px;
+  right: 5%;
+  /* margin-left: 20px; */
+}
+
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  height: 100vh;
+}
+
+img {
+  margin: 7px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  background-color: #db791f;
+  color: white;
+}
