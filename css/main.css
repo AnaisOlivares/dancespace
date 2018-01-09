@@ -1,16 +1,26 @@
 body {
-  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   background-color: #2b2b2b;
-  color: #db791f;
+  color: white;
 }
 
 * {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Rationale', sans-serif;
   /* color: white; */
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
+  margin: 0px;
+}
+
+.marg {
+  margin: 0px;
+}
+
+.bold {
+  font-weight: 900;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 hr {
@@ -18,29 +28,8 @@ hr {
   /* text-align: center; */
 }
 
-.square {
-  width: 17px;
-  height: 17px;
-  border: 1px solid white;
-  position: relative;
-  float: left;
-  /* top: 17px; */
-  left: 9%;
-}
-
-.hidden {
-  display: none;
-}
-
-.square-2 {
-  width: 17px;
-  height: 17px;
-  border: 1px solid white;
-  position: relative;
-  float: right;
-  bottom: 28px;
-  right: 5%;
-  /* margin-left: 20px; */
+.bgr {
+  background-color: #181917;
 }
 
 .container-flex-column {
@@ -66,4 +55,51 @@ li {
 .btn {
   background-color: #db791f;
   color: white;
+}
+
+.section {
+  background-image: url(../assets/images/turn.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: flex-center; */
+}
+
+.register {
+  background-color: pink;
+  position: relative;
+  margin-top: 17%;
+}
+
+.container-flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.disco {
+  background-image: url(../assets/images/discover.jpg);
+  height: 45vh;
+  background-size: contain;
+  background-position: center center;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: flex-center; */
+}
+
+.search {
+  margin-top: 77px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 45vh;
 }
