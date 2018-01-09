@@ -106,7 +106,6 @@ li {
 
 .overlay-2 {
   background: rgba(0, 0, 0, 0.8);
-  /* height: 45vh; */
   border-radius: 6px;
   box-shadow: 5px 5px 5px #f16841;
 }
@@ -117,10 +116,12 @@ button {
 
 .color-btn {
   background-color: #f16841;
+}
 
+.second-color {
+  color: #f16841;
 }
 .square-global {
-  width: 301px;
   height: 354px;
   padding: 20px;
   display: inline-block;
@@ -128,4 +129,16 @@ button {
   margin: 36px;
   box-shadow: 5px 5px 5px #f16841;
   border-radius: 6px;
+}
+
+.vid {
+  height: 396px;
+  box-shadow: 5px 5px 5px #f16841;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+
+.vid-medium {
+  margin-top: 10px;
+margin-bottom: 10px;
 }
