@@ -111,6 +111,14 @@ li {
   box-shadow: 5px 5px 5px #f16841;
 }
 
+button {
+  margin: 5px;
+}
+
+.color-btn {
+  background-color: #f16841;
+
+}
 .square-global {
   width: 301px;
   height: 354px;
