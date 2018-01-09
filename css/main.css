@@ -40,8 +40,8 @@ body {
   height: 100vh;
 }
 
-img {
-  margin: 7px;
+.img {
+  margin: 10px;
 }
 
 img:hover {
