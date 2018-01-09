@@ -142,3 +142,23 @@ button {
   margin-top: 10px;
 margin-bottom: 10px;
 }
+
+
+/* Estilos de perfil */
+
+section.perfil {
+  padding-top: 6rem;
+  height: 50vh;
+}
+
+img.user-img {
+  position: relative;
+  top: 2rem;
+  height: 15rem;
+  width: 17rem;
+}
+
+p.name-user {
+  padding-top: 6rem;
+  padding-left: 4rem;
+}

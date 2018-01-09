@@ -129,3 +129,11 @@ button {
   box-shadow: 5px 5px 5px #f16841;
   border-radius: 6px;
 }
+
+
+
+/* Estilos de perfil */
+
+section.perfil {
+  padding-top: 6rem;
+}
