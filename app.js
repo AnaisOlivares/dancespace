@@ -14,30 +14,43 @@ var user = null;
 
 var $logGoo = $('#google');
 
-$logGoo.on('click', googleLog);
+$logGoo.on('click', signIn);
 
-function googleLog(event){
-  event.preventDefault();
+// function googleLog(event){
+//   event.preventDefault();
   
-  var provider = new firebase.auth.GoogleAuthProvider();
+//   var provider = new firebase.auth.GoogleAuthProvider();
 
-  firebase  
-    .auth()
-    .signInWithPopup(provider)
-    .then(function(result){
-      var user = firebase.auth().currentUser;
-      name = user.displayName;
-      console.log(user);
-      console.log(name);
-    })
-}
+//   firebase  
+//     .auth()
+//     .signInWithPopup(provider)
+//     .then(function(result){
+//       var user = firebase.auth().currentUser;
+//       name = user.displayName;
+//       console.log(user);
+//       console.log(name);
+//     })
+//     window.location.href = 'views/discover.html';
+// }
 
-function SignIn(){
+function signIn(){
   if(!firebase.auth().currentUser){
     var provider = new firebase.auth.GoogleProvider();
     provider.addScope('https:www.googleapis.com/auth/plus.login');
     firebase.auth().signInWithPopup(provider).then(function(result){
-      var token
+      var token = result.credential.accesstoken;
+      var user = result-user;
+    }).catch(function(error){
+      var errorCode = error.Code;
+      var errorMessage = error.message;
+      var erroremail = error.email;
+      var credential = error.credential;
+      if(errorcode === 'auth/account-exists-with-different-credential'){
+        alert('Es el mismo usuario');
+      }
     })
+  } else {
+    firebase.auth().signOut();
   }
+  window.location.href = 'views/discover/';
 }
