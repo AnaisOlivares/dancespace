@@ -18,7 +18,7 @@
 ![sketch](assets/images/DANCE.png)
 > * Brainstorming: En esta etapa desarrollamos diversas ideas para elegir el producto final tales como tema, nombre, creación del logo.
 
-![sketch](assets/images/LOGOSPACE.png)
+![sketch](assets/images/logo.png)
 
 
 > * Research: En esta etapa se realizó entrevistas vía redes sociales a personas apasionadas por la danza y que la practican.
