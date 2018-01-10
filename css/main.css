@@ -40,7 +40,7 @@ body {
   height: 100vh;
 }
 
-.img {
+img, .img {
   margin: 10px;
 }
 
@@ -146,6 +146,7 @@ button {
   margin: 36px;
 
 } */
+
 .vid {
   height: 396px;
   box-shadow: 5px 5px 5px #f16841;
