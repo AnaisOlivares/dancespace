@@ -31,3 +31,13 @@ function googleLog(event){
       console.log(name);
     })
 }
+
+function SignIn(){
+  if(!firebase.auth().currentUser){
+    var provider = new firebase.auth.GoogleProvider();
+    provider.addScope('https:www.googleapis.com/auth/plus.login');
+    firebase.auth().signInWithPopup(provider).then(function(result){
+      var token
+    })
+  }
+}
