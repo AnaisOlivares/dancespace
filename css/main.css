@@ -187,3 +187,19 @@ img.user-img {
 a:hover {
   color: #f16841;
 }
+
+/* estilo de vista discover */
+
+.pages {
+  color: #181917;
+}
+.name-page {
+  text-transform: uppercase;
+}
+
+.img-pages{
+  width: 90%;
+  height: 70%;
+  padding-left: 3rem;
+  border-radius: 10px;
+}
