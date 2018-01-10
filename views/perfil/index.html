@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/icons/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/icons/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../vendors/bootstrap/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="../../css/main.css">
-  <title>discover</title>
+  <title>Perfil</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-default head navbar-inverse marg navbar-fixed-top">
+    <nav class="navbar navbar-default head navbar-inverse navbar-fixed-top">
       <div class="container-fluid ">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -33,16 +34,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#">Descubre</a>
+              <a href="../discover/index.html">Descubre</a>
             </li>
             <li>
-              <a href="../perfil/index.html">Perfil</a>
+              <a href="#">Perfil</a>
             </li>
             <li>
-              <a href="../views/live.html">En Vivo</a>
-            </li>
-            <li>
-              <a href="../views/live.html">Vacantes</a>
+              <a href="live.html">En Vivo</a>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario
@@ -63,40 +61,59 @@
           </ul>
         </div>
       </div>
-      <!-- /.container-fluid -->
     </nav>
   </header>
 
-  <section class="disco">
-    <div class="container-fluid overlay">
-      <div class="row search">
-        <h1 class="text-center bold">Descubre nuevos bailarines
-          <br> y talentos</h1>
-        <div class="form-group has-success has-feedback col-md-6 col-md-offset-3">
-          <div class="input-group">
-            <span class="input-group-addon">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </span>
-            <input type="text" class="form-control" id="inputGroups" aria-describedby="inputGroupSuccess1Status">
-          </div>
 
+  <section class="portada">
+    <div class="container-fluid">
+      <div class="row search">
+        <div class="form-group has-success has-feedback col-md-6 col-md-offset-1">
+          <img src="../../assets/images/liluser.jpg" alt="user-img" class="user-img col-md-4 col-xs-6 img-responsive img-thumbnail btn">
+          <h2 class="name-user bold">Nombre de usuario</h2>
+
+          <div>
+            <input type="file" class="form-control-file hidden-xs hidden-sm hidden-md hidden-lg" id="exampleInputFile">
+            <label for="exampleInputFile">
+              <i class="fa fa-camera"></i>
+            </label>
+
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- box de páginas grupales -->
-<div class="container" id="box-pages">
-    <div class="row" ></div>
 
-  </div>
 
-  <!-- cuadros de resultados -->
-  <div class="container ">
-    <div class="row col-md-12 col-md-offset-0">
+  <div class="container-fluid ">
+    <div class=" col-md-3 img">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>...</p>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="row col-md-9 col-xs-12 bgr">
+      <!-- <div class="row"> -->
+
+      <section>
+        <h1>anaisssssssssss</h1>
+        <div class="input-wrapper">
+          <textarea class="black" name="name" id="name" rows="4" cols="80" placeholder="¿Qué estás pensando?" autofocus></textarea>
+          <button id="save" class="btn">POSTEAR </button>
+          <!--  <button id="save" class="btn">TWEET</button> -->
+        </div>
+        <p id="container-contact">
+        </p>
+
+      </section>
+
       <article class="square-global col-md-3">
         <img class="col-md-12 col-xs-12" src="http://bestdanceforever.com/wp-content/uploads/2016/10/best-dancer-list-65-lando-wilkin.jpg"
-          alt="feed">
+          alt="proyecto">
 
         <h2 class="second-color">Título</h2>
         <div class="squares">
@@ -111,7 +128,7 @@
 
 
       <article class="square-global col-md-3">
-        <img class="col-md-12 col-xs-12" src="https://entertainment.ava360.com/uploads/thumbs/1bf83f606-social.jpg" alt="feed">
+        <img class="col-md-12 col-xs-12" src="https://entertainment.ava360.com/uploads/thumbs/1bf83f606-social.jpg" alt="proyecto">
 
         <h2 class="second-color">Título</h2>
         <div class="squares">
@@ -125,8 +142,7 @@
       </article>
 
       <article class="square-global col-md-3">
-        <img class="col-md-12 col-xs-12" src="https://entertainment.ava360.com/uploads/thumbs/1bf83f606-social.jpg" alt="feed">
-
+        <img class="col-md-12 col-xs-12" src="https://entertainment.ava360.com/uploads/thumbs/1bf83f606-social.jpg" alt="proyecto">
         <h2 class="second-color">Título</h2>
         <div class="squares">
           <span id=""></span>
@@ -145,11 +161,8 @@
 
 
   <script src="../../vendors/js/jquery-3.2.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
-    crossorigin="anonymous"></script>
   <script type="text/javascript" src="../../vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../../js/discover.js"></script>
-  <script src="../../js/data.js"></script>
+  <script src="../../js/perfil.js"></script>
 </body>
 
 </html>
