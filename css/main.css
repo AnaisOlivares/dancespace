@@ -24,6 +24,9 @@ body {
   text-rendering: optimizelegibility;
 }
 
+.black {
+  color: black;
+}
 .vh100 {
   background: linear-gradient( rgb(0, 0, 0) 65%, rgb(251, 81, 33));
 }
