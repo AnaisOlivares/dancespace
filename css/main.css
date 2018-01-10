@@ -216,5 +216,15 @@ a:hover {
 
 .follw {
   height: 5rem;
+}
 
+/* estilo de contenedor de post */
+
+#post {
+  height: auto;
+  color: #181917;
+}
+
+.display {
+  display: inline-block;
 }
