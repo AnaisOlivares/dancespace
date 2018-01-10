@@ -31,6 +31,10 @@ body {
   background: linear-gradient( rgb(0, 0, 0) 65%, rgb(251, 81, 33));
 }
 
+.padding {
+  padding: 7px;
+}
+
 .bgr {
   background-color: #181917;
 }
@@ -124,8 +128,12 @@ li {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 6px;
   box-shadow: 5px 5px 5px #f16841;
+  /* margin: 20px; */
 }
 
+.mrg-20 {
+  margin: 20px;
+}
 button {
   margin: 5px;
 }
