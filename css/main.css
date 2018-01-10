@@ -35,6 +35,9 @@ body {
   background-color: #181917;
 }
 
+.scroll {
+  overflow-y: hidden;
+}
 .container-flex-column {
   display: flex;
   flex-direction: column;

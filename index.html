@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+
+<body class="scroll">
   <section class="container-flex-column vh100" id="splash">
     <div class="container">
       <div class="row">
-        <div class="col m12 s12">
-          <img src="assets/images/LOGOSPACE.png" alt="logo" class="img-responsive animated zoomIn">
+        <div class="col-md-12 col-xs-12">
+          <img src="assets/images/LOGOSPACE.png" alt="logo" class="img-responsive animated zoomInUp">
         </div>
       </div>
     </div>
@@ -25,14 +27,13 @@
       <div class="container-fluid ">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed hamburguer" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed hamburguer" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="../index.html">
+          <a href="index.html">
             <img class="logo" src="assets/images/logooficial.png" alt="logo">
           </a>
         </div>
@@ -40,13 +41,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="discover.html">Descubre</a>
+              <a href="views/discover.html">Descubre</a>
             </li>
             <li>
-              <a href="perfil.html">Perfil</a>
+              <a href="views/perfil.html">Perfil</a>
             </li>
             <li>
-              <a href="live.html">En Vivo</a>
+              <a href="views/live.html">En Vivo</a>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario
@@ -100,7 +101,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="form-group">
             <div class="col-md-offset-0 col-md-12 col-xs-12">
               <button class="btn btn-default color-btn col-md-3 col-md-offset-3 col-xs-5 col-xs-offset-1">Ingresar</button>
               <button class="btn btn-default color-btn col-md-3 col-md-offset-0 col-xs-5 col-xs-offset-0">Registrarse</button>
@@ -112,10 +113,11 @@
     </div>
 
   </section>
-<script src="vendors/js/jquery-3.2.1.min.js"></script>
-<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script src="app.js"></script>
-<script src="js/splash.js"></script>
+  <script src="vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="app.js"></script>
+  <script src="js/splash.js"></script>
 </body>
+
 </html>
