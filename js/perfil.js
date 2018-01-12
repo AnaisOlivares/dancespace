@@ -1,35 +1,34 @@
-$(document).ready(function(){
-
+$(document).ready(function() {
   var btn = $('#btn');
   btn.disabled = true;
   var textarea = $('#textarea');
 
-  textarea.keyup(function () {
+  textarea.keyup(function() {
     validation();
   });
 
   function validation() {
     var long = textarea.val().length;
     var onlyText = textarea.val().replace(/\s/g, '');
-    if (long == 0 || onlyText == 0) {
+    if (long === 0 || onlyText === 0) {
       btn.disabled = true;
-    }
-    else {
+    } else {
       btn.disabled = false;
     }
   }
-  btn.click(function () {
+  btn.click(function() {
     addTask();
     time();
     textarea.val('');
     btn.disabled = true;
   });
+
   function addTask() {
     var taskContent = textarea.val();
     var containerPost = $('#container-post');
     var newTask = $('<div>');
     newTask.addClass('square-global col-md-9 col-md-offset-3 col-xs-9');
-    newTask.attr("id", "post");
+    newTask.attr('id', 'post');
     containerPost.append(newTask);
     var label = $('<label>');
     newTask.append(label).append('<div class="display"><button class="btn">Comentar</button></div>');
@@ -43,14 +42,15 @@ $(document).ready(function(){
     function labeledTask() {
       label.toggleClass('labeled');
     }
-    icon.click(function () {
+    icon.click(function() {
       deleteTask();
     });
+
     function deleteTask() {
-      newTask.remove()
+      newTask.remove();
     }
   }
-  
+
   function time() {
     var actualDate = new Date();
     var actualHour = actualDate.getHours() + ':' + actualDate.getMinutes();
@@ -58,15 +58,14 @@ $(document).ready(function(){
   }
 
   $('#exampleInputFile').on('change', function(img) {
-    var f = img.target.files[0];
+    var file = img.target.files[0];
     var fr = new FileReader();
-    
+
     fr.onload = function(ev2) {
-        console.dir(ev2);
-        $('#i').attr('src', ev2.target.result);
-        $('#i').addClass('img-responsive');
+      console.dir(ev2);
+      $('#i').attr('src', ev2.target.result);
+      $('#i').addClass('img-responsive square-global');
     };
-    
     fr.readAsDataURL(f);
+  });
 });
-})
