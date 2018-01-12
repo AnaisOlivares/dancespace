@@ -83,22 +83,22 @@ var data = [{
 var data1 = [
   {
     'name': 'be your self',
-    'type': 'Somos un grupo de apasionados por el baile ...',
+    'type': ' Somos un grupo conformado por jóvenes apasionados por el baile que, desde hace un año, decidieron juntarse para bailar Hip Hop.',
     'image': '../../assets/images/users/17.jpg'
   },
   {
     'name': 'we can dance',
-    'type': 'Somos un grupo de apasionados por el baile ...',
+    'type': 'Nuestro grupo es un espacio conformado por personas que sienten que el baile es la mejor manera de expresar tus sentimientos y que todos podemos aprender a bailar.',
     'image': '../../assets/images/users/18.jpg'
   },
   {
     'name': 'dance with us',
-    'type': 'Somos un grupo de apasionados por el baile ...',
+    'type': 'Nuestro grupo realiza una importante labor en el barrio El Bosque, pues busca contagiar con su sabor a los niños y personas de la tercera edad de la localidad',
     'image': '../../assets/images/users/19.jpg'
   },
   {
     'name': 'express yourself',
-    'type': 'Somos un grupo de apasionados por el baile ...',
+    'type': 'Es una academia de baile contemporáneo en Ayacucho y alberga a jóvenes apasionados por este género',
     'image': '../../assets/images/users/20.jpg'
   }
 ];
