@@ -27,6 +27,7 @@ body {
 .black {
   color: black;
 }
+
 .vh100 {
   background: linear-gradient( rgb(0, 0, 0) 65%, rgb(251, 81, 33));
 }
@@ -42,6 +43,7 @@ body {
 .scroll {
   overflow-y: hidden;
 }
+
 .container-flex-column {
   display: flex;
   flex-direction: column;
@@ -50,7 +52,8 @@ body {
   height: 100vh;
 }
 
-img, .img {
+img,
+.img {
   margin: 10px;
 }
 
@@ -134,6 +137,7 @@ li {
 .mrg-20 {
   margin: 20px;
 }
+
 button {
   margin: 5px;
 }
@@ -156,6 +160,7 @@ button {
   border-radius: 6px;
 }
 
+
 /* .discover-marg {
   margin: 36px;
 
@@ -172,6 +177,7 @@ button {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 
 /* Estilos de perfil */
 
@@ -196,28 +202,32 @@ a:hover {
   color: #f16841;
 }
 
+
 /* estilo de vista discover */
 
 .pages {
   color: #181917;
 }
+
 .name-page {
   text-transform: uppercase;
   text-align: center;
 }
 
-.img-pages{
+.img-pages {
   width: 90%;
   height: 70%;
   padding-left: 3rem;
   border-radius: 10px;
 }
 
+
 /* estilo de perfil */
 
 .follw {
   height: 5rem;
 }
+
 
 /* estilo de contenedor de post */
 
@@ -240,6 +250,7 @@ a:hover {
 
 
 /* Estilo modal */
+
 .image-modal-size {
   height: 6rem;
   width: 6rem;

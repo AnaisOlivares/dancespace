@@ -16,21 +16,21 @@ var $logGoo = $('#google');
 
 $logGoo.on('click', googleLog);
 
-function googleLog(event){
+function googleLog(event) {
 
   event.preventDefault();
-  
+
   var provider = new firebase.auth.GoogleAuthProvider();
 
-  firebase  
+  firebase
     .auth()
     .signInWithPopup(provider)
-    .then(function(result){
+    .then(function (result) {
       var user = firebase.auth().currentUser;
       name = user.displayName;
       console.log(user);
       console.log(name);
-      if(user){
+      if (user) {
         window.location.href = 'views/discover';
 
       }

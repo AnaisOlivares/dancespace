@@ -1,4 +1,3 @@
-
 $(function () {
   var groups = [
     'be your self',
@@ -11,14 +10,16 @@ $(function () {
   });
 });
 
-$(document).ready(function(){
+// funcion de busqueda para input en descubre
+
+$(document).ready(function () {
   var $boxPages = $('#box-pages');
   var $inputGroups = $('#inputGroups');
-  
+
   for (i = 0; i < data1.length; i++) {
-    $boxPages.append('<div class="pages square-global" id="pages" data-name="' + data1[i].name + '"><h1 class="name-page">' + data1[i].name + '</h1><img class="img-pages img-responsive"  src="' + data1[i].image + '"><div><p>'+ data1[i].type + '<div class="cont-btn"><button class="btn btn-fo">Seguir</button></div></div>')
+    $boxPages.append('<div class="pages square-global" id="pages" data-name="' + data1[i].name + '"><h1 class="name-page">' + data1[i].name + '</h1><img class="img-pages img-responsive"  src="' + data1[i].image + '"><div><p>' + data1[i].type + '<div class="cont-btn"><button class="btn btn-fo">Seguir</button></div></div>')
   }
-  
+
   var $pages = $('.pages');
   $pages.hide();
 
@@ -34,7 +35,7 @@ $(document).ready(function(){
       }
     });
   };
-  
+
   // var $btnLike = $('.btn-fo');
   // $btnLike.on('click', function () {
   //     $($btnLike).after('<span>' + 1 + '</span>');
@@ -42,5 +43,5 @@ $(document).ready(function(){
   // })
 
   $inputGroups.keyup(showSearch);
-  
+
 });

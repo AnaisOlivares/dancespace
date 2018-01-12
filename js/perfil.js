@@ -1,9 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var btn = $('#btn');
   var textarea = $('#textarea');
   var $containerPost = $('#container-post');
-
-//  función para post
 
   // btn.on('click', function(){
   //   if (boxText.value && boxText.value !== ' ') {
@@ -24,8 +22,8 @@ $(document).ready(function() {
   //   }
   // })
 
-  
-  textarea.keyup(function() {
+  //  función para post
+  textarea.keyup(function () {
     var long = textarea.val().length;
     if (long === 0) {
       btn.attr(disabled, true);
@@ -37,7 +35,7 @@ $(document).ready(function() {
   function addTask() {
     var taskContent = textarea.val();
     var containerPost = $('#container-post');
-    var newDiv  = $('<div>');
+    var newDiv = $('<div>');
     newDiv.addClass('square-global col-md-9 col-md-offset-3 col-xs-9');
     newDiv.attr('id', 'post');
     containerPost.append(newDiv);
@@ -49,20 +47,21 @@ $(document).ready(function() {
     icon.addClass('glyphicon glyphicon-trash icon');
     newDiv.append(icon);
     textarea.val('');
-    
+
     function labeledTask() {
       label.toggleClass('labeled');
     }
-    icon.click(function() {
+
+    icon.click(function () {
       deleteTask();
     });
-    
+
     function deleteTask() {
       newDiv.remove();
     }
   }
-  
-  btn.click(function() {
+
+  btn.click(function () {
     addTask();
     time();
     textarea.val('');
@@ -76,11 +75,12 @@ $(document).ready(function() {
   }
 
   // función que postea Imágenes
-  $('#exampleInputFile').on('change', function(img) {
+
+  $('#exampleInputFile').on('change', function (img) {
     var file = img.target.files[0];
     var fr = new FileReader();
 
-    fr.onload = function(ev2) {
+    fr.onload = function (ev2) {
       console.dir(ev2);
       $('#i').attr('src', ev2.target.result);
       $('#i').addClass('img-responsive square-global');
@@ -89,15 +89,17 @@ $(document).ready(function() {
   });
 });
 
-// función de modal
+// función de modal de siguiendo
 
-$('.following').on('click', function(){
+$('.following').on('click', function () {
   console.log('hizo click');
-  for(var i=0; i<8;i++){
+  for (var i = 0; i < 8; i++) {
     console.log('funciona for');
-    $('.following-modal').append('<div><img src="../../' + data[i].image + '" class="image-modal-size"><p class="name-display">' + data[i].name + '</p><button class="btn"> Dejar de seguir</button></div>');
+    $('.following-modal').append('<div><img with="6rem" height="6rem" src="../../' + data[i].image + '" class="image-modal-size"><p class="name-display">' + data[i].name + '</p><button class="btn"> Dejar de seguir</button></div>');
   }
 })
+
+// función modal de seguidores
 
 $('.followers').on('click', function () {
   console.log('hizo click');
