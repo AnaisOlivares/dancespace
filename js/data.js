@@ -1,5 +1,5 @@
 var data = [{
-  'name': 'priscila paredes',
+  'name': 'paul paredes',
   'type': 'salsa, house, hip hop',
   'image': 'assets/images/users/1.jpg'
 },
@@ -19,12 +19,12 @@ var data = [{
   'image': 'assets/images/users/4.jpg'
 },
 {
-  'name': 'jefrie valdivia',
+  'name': 'juana valdivia',
   'type': 'sexy dance, ritmos modernos',
   'image': 'assets/images/users/5.jpg'
 },
 {
-  'name': 'italo paredes',
+  'name': 'iris paredes',
   'type': 'afro, dancehall, locking, poping',
   'image': 'assets/images/users/6.jpg'
 },
@@ -39,7 +39,7 @@ var data = [{
   'image': 'assets/images/users/8.jpg'
 },
 {
-  'name': 'vania lorenzo',
+  'name': 'victor lorenzo',
   'type': 'break dance, sexy dance, ritmos modernos',
   'image': 'assets/images/users/9.jpg'
 },
@@ -49,7 +49,7 @@ var data = [{
   'image': 'assets/images/users/10.jpg'
 },
 {
-  'name': 'daniela aquino',
+  'name': 'dante aquino',
   'type': 'ritmos modernos, afro, dancehall',
   'image': 'assets/images/users/11.jpg'
 },
@@ -59,7 +59,7 @@ var data = [{
   'image': 'assets/images/users/12.jpg'
 },
 {
-  'name': 'estrella flores',
+  'name': 'ernesto flores',
   'type': 'dancehall, locking, poping',
   'image': 'assets/images/users/13.jpg'
 },

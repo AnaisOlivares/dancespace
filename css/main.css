@@ -226,20 +226,28 @@ a:hover {
   color: #181917;
 }
 
-.display1 {
-  display: none;
-}
-
-.display2 {
-  display: block;
-}
-
 .pad {
   padding-left: 25rem;
 }
 
-
 #pages {
   height: auto;
+}
 
+.display {
+  display: inline-block;
+}
+
+
+/* Estilo modal */
+.image-modal-size {
+  height: 6rem;
+  width: 6rem;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.name-display {
+  display: inline-block;
+  text-transform: uppercase;
 }

@@ -18,7 +18,8 @@
       <div class="container-fluid ">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed hamburguer" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed hamburguer" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -89,16 +90,61 @@
   <div class="container follw">
     <div class="row">
       <span class="col-md-offset-2 col-md-2">Descripción</span>
-      <span class="col-md-offset-2 col-md-2"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Siguiendo</button></span>
-      <span class="col-md-offset-2 col-md-2"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Seguidores</button></span>
+      <span class="col-md-offset-2 col-md-2">
+        <button type="button" class="btn btn-primary btn-lg following" data-toggle="modal" data-target="#myModal1">Siguiendo</button>
+      </span>
+      <span class="col-md-offset-2 col-md-2">
+        <button type="button" class="btn btn-primary btn-lg followers" data-toggle="modal" data-target="#myModal2">Seguidores</button>
+      </span>
     </div>
   </div>
+  <!-- Estructura de modal de seiguiendo -->
+  <div class="modal fade black" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Siguiendo</h4>
+        </div>
+        <div class="modal-body">
+          <div class="following-modal"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Estructura de modal de seguidores -->
+  <div class="modal fade black" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Seguidores</h4>
+        </div>
+        <div class="modal-body">
+          <div class="followers-modal"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
   <div class="container-fluid ">
     <div class=" col-md-3 img">
       <div class="thumbnail">
         <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
+          <h3>Edad: 23años</h3>
+<p>Tipos de Baile: Salsa, house, hip hop, ritmos modernos</p>
         </div>
       </div>
       <!-- </div> -->
@@ -113,8 +159,8 @@
           <button id="btn" type='submit' class="btn">POSTEAR</button>
           <input type="file" class="form-control-file hidden-xs hidden-sm hidden-md hidden-lg" id="exampleInputFile">
           <label for="exampleInputFile">
-              <i class="fa fa-camera"></i>
-            </label>
+            <i class="fa fa-camera"></i>
+          </label>
 
         </div>
 
@@ -128,7 +174,8 @@
       </section>
 
       <article class="square-global col-md-3">
-        <img class="col-md-12 col-xs-12" src="http://bestdanceforever.com/wp-content/uploads/2016/10/best-dancer-list-65-lando-wilkin.jpg" alt="proyecto">
+        <img class="col-md-12 col-xs-12" src="http://bestdanceforever.com/wp-content/uploads/2016/10/best-dancer-list-65-lando-wilkin.jpg"
+          alt="proyecto">
 
         <h2 class="second-color">Título</h2>
         <div class="squares">
@@ -181,6 +228,7 @@
   <script src="../../vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../../vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="../../js/perfil.js"></script>
+  <script src="../../js/data.js"></script>
 </body>
 
 </html>
