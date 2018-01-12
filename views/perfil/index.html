@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/icons/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../assets/icons/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../vendors/bootstrap/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="../../css/main.css">
@@ -26,7 +26,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="../index.html">
+          <a href="../discover/index.html">
             <img class="logo" src="../../assets/images/logooficial.png" alt="logo">
           </a>
         </div>
@@ -36,15 +36,16 @@
             <li>
               <a href="../discover/index.html">Descubre</a>
             </li>
+             <li>
+              <a href="../jobs/index.html">Vacantes</a>
+            </li>
             <li>
               <a href="#">Perfil</a>
             </li>
             <li>
               <a href="../live/index.html">En Vivo</a>
             </li>
-            <li>
-              <a href="../jobs/index.html">Vacantes</a>
-            </li>
+           
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario
                 <span class="caret"></span>
@@ -75,13 +76,14 @@
           <img src="../../assets/images/liluser.jpg" alt="user-img" class="user-img col-md-4 col-xs-6 img-responsive img-thumbnail btn">
           <h2 class="name-user bold">Nombre de usuario</h2>
 
-          <div>
+<!--           <div>
             <input type="file" class="form-control-file hidden-xs hidden-sm hidden-md hidden-lg" id="exampleInputFile">
+            <img id="i" />
             <label for="exampleInputFile">
               <i class="fa fa-camera"></i>
             </label>
 
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -111,7 +113,18 @@
         <div class="input-wrapper box">
           <textarea class="black col-xs-10  col-xs-offset-1" name="texto" id="textarea" placeholder="¿Qué estás pensando?" autofocus></textarea>
           <button id="btn" type='submit' class="btn">POSTEAR</button>
+           <input type="file" class="form-control-file hidden-xs hidden-sm hidden-md hidden-lg" id="exampleInputFile">
+            <label for="exampleInputFile">
+              <i class="fa fa-camera"></i>
+            </label>
+
         </div>
+         
+         <div>
+         
+            <img id="i" />
+          </div>
+
         <div id="container-post">
 
         </div>
@@ -164,6 +177,9 @@
 
   </div>
   </div>
+
+
+
 
 
   <script src="../../vendors/js/jquery-3.2.1.min.js"></script>

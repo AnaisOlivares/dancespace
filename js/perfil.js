@@ -56,4 +56,17 @@ $(document).ready(function(){
     var actualHour = actualDate.getHours() + ':' + actualDate.getMinutes();
     return actualHour;
   }
+
+  $('#exampleInputFile').on('change', function(img) {
+    var f = img.target.files[0];
+    var fr = new FileReader();
+    
+    fr.onload = function(ev2) {
+        console.dir(ev2);
+        $('#i').attr('src', ev2.target.result);
+        $('#i').addClass('img-responsive');
+    };
+    
+    fr.readAsDataURL(f);
+});
 })
