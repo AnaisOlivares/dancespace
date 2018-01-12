@@ -203,6 +203,7 @@ a:hover {
 }
 .name-page {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .img-pages{
@@ -231,4 +232,14 @@ a:hover {
 
 .display2 {
   display: block;
+}
+
+.pad {
+  padding-left: 25rem;
+}
+
+
+#pages {
+  height: auto;
+
 }
