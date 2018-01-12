@@ -66,6 +66,6 @@ $(document).ready(function() {
       $('#i').attr('src', ev2.target.result);
       $('#i').addClass('img-responsive square-global');
     };
-    fr.readAsDataURL(f);
+    fr.readAsDataURL(file);
   });
 });
