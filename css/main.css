@@ -225,6 +225,10 @@ a:hover {
   color: #181917;
 }
 
-.display {
-  display: inline-block;
+.display1 {
+  display: none;
+}
+
+.display2 {
+  display: block;
 }
