@@ -36,38 +36,3 @@ function googleLog(event) {
       }
     })
 }
-
-// function signIn(){
-//   if(!firebase.auth().currentUser){
-//     var provider = new firebase.auth.GoogleAuthProvider();
-//     provider.addScope('https:www.googleapis.com/auth/plus.login');
-//     firebase.auth().signInWithPopup(provider).then(function(result){
-//       var token = result.credential.accesstoken;
-//       var user = result-user;
-//     }).catch(function(error){
-//       var errorCode = error.Code;
-//       var errorMessage = error.message;
-//       var erroremail = error.email;
-//       var credential = error.credential;
-//       // if(errorcode === 'auth/account-exists-with-different-credential'){
-//       //   alert('Es el mismo usuario');
-//       // }
-//     })
-//     window.location.href = 'views/discover/';
-//   } else {
-//     firebase.auth().signOut();
-//   }
-// }
-
-
-// $(function () {
-//   var groups = [
-//     'be your self',
-//     'we can dance',
-//     'dance with us',
-//     'aprende salsa'
-//   ];
-//   $("#inputGroups").autocomplete({
-//     source: groups
-//   });
-// });

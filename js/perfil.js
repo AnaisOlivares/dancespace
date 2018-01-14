@@ -3,32 +3,16 @@ $(document).ready(function () {
   var textarea = $('#textarea');
   var $containerPost = $('#container-post');
 
-  // btn.on('click', function(){
-  //   if (boxText.value && boxText.value !== ' ') {
-  //     var textTweet = boxText.value;
-  //     $containerPost.append('<div class="post"></div>');
-  //     var $post = $('.post');
-
-  //     textTweet.text(textTweet + ' ' + time());
-  //     $post.append(textTweet);
-  //     // var doTweet = document.createElement('div');
-
-  //     // var containerTweet = document.querySelector('.container-tweet');
-  //     // doTweet.textContent = textTweet + ' ' + time();
-  //     // containerTweet.appendChild(doTweet);
-  //     boxText.value = '';
-  //     // counter.textContent = 140;
-  //     // doTweet.classList.add('tweet-style');
-  //   }
-  // })
-
-  //  función para post
+  //  función que valida si hay espacio o no
   textarea.keyup(function () {
     var long = textarea.val().length;
+    console.log($('#textarea').val().length);
     if (long === 0) {
-      btn.attr(disabled, true);
+      btn.attr('disabled', true);
+      console.log('no hay nada');
     } else {
-      btn.attr(disabled, false);
+      console.log('va');
+      btn.attr('disabled', false);
     }
   });
 
