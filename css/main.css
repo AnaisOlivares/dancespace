@@ -261,4 +261,12 @@ a:hover {
 .name-display {
   display: inline-block;
   text-transform: uppercase;
+  width: 50%;
+}
+
+@media(max-width:400px) {
+  .follw .row span button{
+    padding: 10px;
+    margin: 0;
+  }
 }
