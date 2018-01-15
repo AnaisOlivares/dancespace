@@ -19,8 +19,7 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed hamburguer" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed hamburguer" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -45,15 +44,8 @@
             <li>
               <a href="../live/index.html">En Vivo</a>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="../../index.html">Log out</a>
-                </li>
-              </ul>
+            <li>
+              <a href="../../index.html">Cerrar Sesión</a>
             </li>
           </ul>
         </div>
@@ -61,20 +53,18 @@
     </nav>
   </header>
 
-
   <div class="container-fluid col-md-10 col-md-push-1 overlay-2 mrg-20">
     <div class="row">
       <div class="media">
         <div class="media-left media-middle col-md-4 col-xs-5">
           <a href="#">
-            <img class="media-object img-responsive col-md-6 col-md-offset-3" src="../../assets/images/jobs/3.jpg" alt="job">
-          </a>
+          <img class="media-object img-responsive col-md-6 col-md-offset-3" src="../../assets/images/jobs/3.jpg" alt="job">
+        </a>
         </div>
         <div class="media-body container-fluid padding">
           <h2 class="media-heading">Profesor de Zumba</h2>
-          <p>Buscamos profesor de Zumba, súper pilas y con experiencia previa. Acércate a Av. El ejército 164, Magdalena. Te
-            esperamos!
-          </p>
+          <p>Buscamos profesor de Zumba, súper pilas y con experiencia.Te esperamos!</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#miModal2"> contáctanos </button>
         </div>
       </div>
     </div>
@@ -85,35 +75,91 @@
       <div class="media">
         <div class="media-left media-middle col-md-4 col-xs-5">
           <a href="#">
-            <img class="media-object img-responsive col-md-6 col-md-offset-3" src="../../assets/images/jobs/2.jpg" alt="job">
-          </a>
+          <img class="media-object img-responsive col-md-6 col-md-offset-3 " data-toggle="modal" data-target="#miModal" src="../../assets/images/jobs/2.jpg" alt="job">
+        </a>
         </div>
         <div class="media-body container-fluid padding">
           <h2 class="media-heading">Asistente de Salsa, Bachata y ritmos tropicales</h2>
-          <p>Te estamos buscando! Sé parte de la escuela de baile número 1 del país, no necesitas experiencia previa, te esperamos
-            en Av. Revelación 1010, Chorrillos</p>
+          <p>Te estamos buscando! Sé parte de la escuela de baile número 1 del país, no necesitas experiencia.</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#miModal"> contáctanos </button>
+
         </div>
       </div>
     </div>
   </div>
-
+  <!-- ba -->
   <div class="container-fluid col-md-10 col-md-push-1 overlay-2 mrg-20">
     <div class="row">
       <div class="media">
         <div class="media-left media-middle col-md-4 col-xs-5">
           <a href="#">
-            <img class="media-object img-responsive col-md-6 col-md-offset-3" src="../../assets/images/jobs/1.jpg" alt="job">
-          </a>
+          <img class="media-object img-responsive col-md-6 col-md-offset-3 " data-toggle="modal" data-target="#miModal" src="../../assets/images/jobs/1.jpg" alt="job">
+        </a>
         </div>
         <div class="media-body container-fluid padding">
-          <h2 class="media-heading">Profesor de danza urbana</h2>
-          <p>Por encargo de una de nuestras agencias, nos encontraos en la búsqueda de un profesional en danza urbana 100% comprometido
-            con causas sociales y buen trato con niños. Acercárse a Tomás Valle 387, Jesús María</p>
+          <h2 class="media-heading">Profesor(a) de danza urbana</h2>
+          <p>Por encargo de una de nuestras agencias, nos encontramos en la búsqueda de un profesional en danza urbana 100% comprometido con causas sociales.</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#miModal5"> contáctanos </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- primer modal -->
+  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body form-horizontal mod-color">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <!-- <button type="button" class="btn btn-primary btn-lg btn-block dark">Quieres postular a esta oferta?</button> -->
+          <h3 class="text-center black">D1 Asociación de baile - Asistente de salsa
+            </h3>
+          <img class="img-responsive col-md-offset-0 col-md-12 col-xs-12 col-xs-offset-0" src="../../assets/images/salsa.jpg" alt="salsa">
+          <br>
+          <p class="text-center black">Av. El Triunfo 204/ Acercarse al área de recursos humanos / 3:00 pm - 5:00 pm</p>
+          <button type="button" class="btn-primary btn-lg btn-block btn">Llamar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- segundo modal -->
+  <div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body form-horizontal mod-color">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <!-- <button type="button" class="btn btn-primary btn-lg btn-block dark">Quieres postular a esta oferta?</button> -->
+          <h3 class="text-center black">Escuela de baile TFS - Profesor(a) de Zumba
+            </h3>
+          <img class="img-responsive col-md-offset-0 col-md-12 col-xs-12 col-xs-offset-0" src="../../assets/images/z.jpg" alt="zumba">
+          <br>
+          <p class="text-center black">Acércate a nuestra sede ubicada en Av. Revelación 768, Magdalena / 10:00 am - 12:00 am/ Preguntar por Ana Claudia Reyes</p>
+          <button type="button" class="btn-primary btn-lg btn-block btn">Llamar</button>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- tercer modal -->
+  <div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body form-horizontal mod-color">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <!-- <button type="button" class="btn btn-primary btn-lg btn-block dark">Quieres postular a esta oferta?</button> -->
+          <h3 class="text-center black">Academia Danzar - Pofesor(a) de baile
+            </h3>
+          <img class="img-responsive col-md-offset-0 col-md-12 col-xs-12 col-xs-offset-0" src="../../assets/images/quest.jpg" alt="zumba">
+          <br>
+          <p class="text-center black">Acércate a nuestra sede ubicada en Av. Tomás Valle / 9:00 am - 12:00 am/ Preguntar por Richi Delagado</p>
+          <button type="button" class="btn-primary btn-lg btn-block btn">Llamar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../../vendors/bootstrap/js/bootstrap.min.js"></script>
