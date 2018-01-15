@@ -140,12 +140,13 @@ var $imgUser = $('.imagUser');
 
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
+    console.log('si');
     var displayName = user.displayName;
     var email = user.email;
     var photoURL = user.photoURL;
     var uid = user.uid;
     var providerData = user.providerData;
-    // ...
+
     $nameUser.text(displayName);
     $imgUser.attr('src', photoURL);
   }
