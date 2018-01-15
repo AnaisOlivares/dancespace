@@ -7,7 +7,6 @@ var config = {
   storageBucket: "prueba-8358a.appspot.com",
   messagingSenderId: "876058746890"
 };
-
 firebase.initializeApp(config);
 
 var user = null;
@@ -32,19 +31,24 @@ function googleLog(event) {
       console.log(name);
       if (user) {
         window.location.href = 'views/discover';
-
       }
     })
 }
 
-function saveData(user) {
-  var users = {
-    uid: user.uid,
-    nombre: user.displayName,
-    email: user.email,
-    foto: user.photoURL
-  };
-  firebase.database().ref('datapp').push(users).then(user => {
-    window.location.href = 'views/perfil';
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture: imageUrl
   });
-};
+}
+
+firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    // User is signed in.
+
+    writeUserData((user.providerData[0].uid), (user.displayName), (user.email), (user.photoURL));
+  } else {
+    // No user is signed in.
+  }
+});
