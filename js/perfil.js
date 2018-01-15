@@ -51,7 +51,7 @@ function addTask() {
     // $('.post').append('<div> <input type="text" placeholder="Comenta"></div>');
   });
 
-  $('.coment').on("keydown", function(event) {
+  $('.coment').on("keydown", function (event) {
     // var value = this.value + String.fromCharCode(e.keyCode);
     console.log('hi');
     console.log(event.keyCode);
@@ -122,3 +122,31 @@ $('.followers').on('click', function () {
     $('.followers-modal').append('<div><img src="../../' + data[i].image + '" class="image-modal-size"><p class="name-display">' + data[i].name + '</p><button class="btn">Seguir</button></div>');
   }
 })
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyCJlEMeaDXhGRe7AFdeUd-_dHrTKd75Ah4",
+  authDomain: "prueba-8358a.firebaseapp.com",
+  databaseURL: "https://prueba-8358a.firebaseio.com",
+  projectId: "prueba-8358a",
+  storageBucket: "prueba-8358a.appspot.com",
+  messagingSenderId: "876058746890"
+};
+
+firebase.initializeApp(config);
+
+var $nameUser = $('.nameUser');
+var $imgUser = $('.imagUser');
+
+firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    var displayName = user.displayName;
+    var email = user.email;
+    var photoURL = user.photoURL;
+    var uid = user.uid;
+    var providerData = user.providerData;
+    // ...
+    $nameUser.text(displayName);
+    $imgUser.attr('src', photoURL);
+  }
+});

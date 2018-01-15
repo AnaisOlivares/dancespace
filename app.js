@@ -36,3 +36,15 @@ function googleLog(event) {
       }
     })
 }
+
+function saveData(user) {
+  var users = {
+    uid: user.uid,
+    nombre: user.displayName,
+    email: user.email,
+    foto: user.photoURL
+  };
+  firebase.database().ref('datapp').push(users).then(user => {
+    window.location.href = 'views/perfil';
+  });
+};
