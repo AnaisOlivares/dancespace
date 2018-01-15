@@ -75,19 +75,11 @@ function time() {
   return actualHour;
 }
 
-// $('.btncoment').click(function () {
-//   console.log('comenta');
-//   ('.post').append('<div <p>hola</p></div>');
-// });
-
 function addComent() {
   $('.post').append('<div><input type="text" placeholder="Comenta" class="coment"></div>');
   console.log('le diste click');
 }
-// $('.coment').on("keydown", function (event) {
-//   // var value = this.value + String.fromCharCode(e.keyCode);
-//   console.log(event.which);
-// })
+
 // función que postea Imágenes
 
 $('#exampleInputFile').on('change', function (img) {
@@ -101,7 +93,6 @@ $('#exampleInputFile').on('change', function (img) {
   };
   fr.readAsDataURL(file);
 });
-// });
 
 // función de modal de siguiendo
 
@@ -135,11 +126,12 @@ var config = {
 
 firebase.initializeApp(config);
 
-var $nameUser = $('.nameUser');
-var $imgUser = $('.imagUser');
+var $nameUser = $('.userName');
+var $imgUser = $('.imgUser');
 
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
+    console.log(user.displayName);
     var displayName = user.displayName;
     var email = user.email;
     var photoURL = user.photoURL;
@@ -148,5 +140,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     // ...
     $nameUser.text(displayName);
     $imgUser.attr('src', photoURL);
+  } else {
+    console.log('no');
   }
 });
