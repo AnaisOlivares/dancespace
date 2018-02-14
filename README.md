@@ -1,4 +1,11 @@
-<!-- ## DANCESPACE
+# Dancespace
+Dancespace es una red social donde encontrarás apasionados por el baile como tú, tus crews favoritas y puestos de trabajo para bailarines.
+
+![Dancespace-preview](https://user-images.githubusercontent.com/32288883/36190284-54fb1228-1125-11e8-88d2-bcbe6aecf1c1.png)
+
+## Desarrollado para
+[Laboratoria](http://laboratoria.la)
+
 
 ### Introducción
 >DANCESPACE es una nueva red social, que nace con la idea de reunir, conectar, compartir y generar información sobre puestos laborales entre personas apasionadas por el baile.
@@ -35,12 +42,4 @@
 ## CEO
 >[Alejandra Cabrera](https://github.com/AlejandraCP)
 
->[Anais Olivares](https://github.com/AnaisOlivares) -->
-
-# Dancespace
-Dancespace es una red social donde encontrarás apasionados por el baile como tú, tus crews favoritas y puestos de trabajo para bailarines.
-
-![Dancespace-preview](https://user-images.githubusercontent.com/32288883/36190284-54fb1228-1125-11e8-88d2-bcbe6aecf1c1.png)
-
-## Desarrollado para
-[Laboratoria](http://laboratoria.la)
+>[Anais Olivares](https://github.com/AnaisOlivares)
